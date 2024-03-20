@@ -60,7 +60,7 @@ echo
 
 # --- get route ---
 echo 
-echo -ne "[INFO]  -  ${YELLOW}ROUTE${NC}  -  "${BLUE} $(echo google.com 2> /dev/null) ${NC}
+echo -ne "[INFO]  -  ${YELLOW}ROUTE${NC}  -  "${BLUE} $(oc get route grafana-route -n $namespace 2> /dev/null) ${NC}
 echo
 
 echo
